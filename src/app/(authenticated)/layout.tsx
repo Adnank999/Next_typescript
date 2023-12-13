@@ -7,9 +7,10 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
   const { user } = useAuth({ middleware: 'auth' })
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-whitek">
       <Navigation user={user} />
 
+    
       {/* Page Content */}
       <main>{children}</main>
     </div>
